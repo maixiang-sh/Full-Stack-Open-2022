@@ -1,0 +1,30 @@
+.notification {
+    border: solid;
+    border-radius: 5px;
+    border-Width: 1px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* 
+1. 类选择器中有空格，如 .a .b ，匹配 class "a" 元素下边的 "b" 元素，如 <div class="a"><div class="b"></div></div>
+2. 类选择器没有空格，如 .a.b ，匹配同时包含 a 和 b 类的元素，如 <div class="a b"></div>
+3. 类选择器中间用逗号隔开，表示匹配 a 或 b
+*/
+.notification.notif-success {
+    border-color: rgb(163, 207, 187);
+    color: rgb(19, 107, 66);
+    background-color: rgb(209, 230, 221);
+}
+
+.notification.notif-danger {
+    border-color: rgb(241, 174, 181);
+    color: rgb(176, 42, 55);
+    background-color: rgb(248, 215, 217);
+}
+
+.notification.notif-normal {
+    border-color: rgb(158, 197, 254);
+    color: rgb(11, 88, 202);
+    background-color: rgb(207, 225, 254);
+}
